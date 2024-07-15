@@ -1,5 +1,5 @@
 body {
-    background-image: url('background.png');
+    background-image: url('/images/background.png');
     background-repeat: no-repeat;
     background-size: 100rem;
     margin: 0;
@@ -36,4 +36,31 @@ body {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+  }
+  
+  .header{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px;
+    max-width: 600px;
+    margin: 100px 500px;
+  }
+  
+  .Image2 {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #800201;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: black;
+    margin: 20px 0;
   }
