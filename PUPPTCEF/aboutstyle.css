@@ -1,0 +1,39 @@
+body {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #800201;
+    box-sizing: border-box;
+    filter: drop-shadow(0 0 0.75rem black);
+  }
+  
+  .Image1 {
+    width: 150px;
+    height: auto;
+    margin-left: 20%;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    margin-left: 72%;
+    gap: 20px;
+    align-items: last baseline;
+    text-decoration: none;
+  }
+  
+  ul, li, a {
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
