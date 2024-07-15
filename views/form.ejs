@@ -4,21 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUPPTCEF</title>
-    <link rel="stylesheet" href="form.css">
-    <link rel="icon" href="pup logo one.png" type="image/pup icon">
+    <link rel="stylesheet" href="stylesheets/form.css">
+    <link rel="icon" href="/images/pup_logo_one.png" type="image/pup icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a href="index.html"><img src="nav logo.png" class="Image1" alt="website logo"></a>
+        <a href="/"><img src="images/nav_logo.png" class="Image1" alt="website logo"></a>
         <ul>
             <li><a href="https://www.pup.edu.ph/">PUP</a></li>
             <li><a href="https://www.pup.edu.ph/gs/forms">FORM</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="/about">ABOUT</a></li>
         </ul>
     </nav>
-    <div class="header">
-        <img src="pup logo two.png" class="Image2" alt="big website logo">
-        <h1>PUPPTCEF</h1>
-        <h2>Request of Permission to Cross-Enroll Form</h2>
+    <div class="container">
+        <header>
+            <img src="/images/pup_logo_one.png" alt="PUPPTCEF Logo">
+            <h1>PUPPTCEF</h1>
+            <h2>REQUEST OF PERMISSION TO CROSS-ENROLL FORM</h2>
+        </header>
+        <section class="instructions">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Fill in your personal details, including your full name, student number, gender, and the current program you are enrolled in.</li>
+                <li>Provide the details of the subject you wish to cross-enroll in such as the subject description and subject code.</li>
+                <li>Ensure you get the necessary approvals by obtaining signatures from relevant authorities.</li>
+            </ol>
+        </section>
+        <form>
+            <div class="row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="First Name, Middle Initial, Last Name" required>
+                <label for="student-number">Student Number</label>
+                <input type="text" id="student-number" name="student-number" required>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" class="very-short-input" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            
+            <div class="row">
+                <label for="program">Program</label>
+                <input type="text" id="program" name="program" required>
+                <label for="semester">Semester</label>
+                <div class="short-input">
+                    <input type="radio" id="1st-sem" name="semester" value="1st" required>
+                    <label for="1st-sem">1st</label>
+                    <input type="radio" id="2nd-sem" name="semester" value="2nd">
+                    <label for="2nd-sem">2nd</label>
+                </div>
+                <label for="school-year">School Year</label>
+                <input type="text" id="school-year" name="school-year" class="short-input" required>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" class="short-input" required>
+            </div>
+            
+            <div class="row">
+                <label for="program-chairperson">Program Chairperson</label>
+                <input type="text" id="program-chairperson" name="program-chairperson" placeholder="First Name, Middle Initial, Last Name" required>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+                <label for="dean">Dean</label>
+                <input type="text" id="dean" name="dean" placeholder="First Name, Middle Initial, Last Name" required>
+            </div>
+            
+            <div class="row">
+                <label for="code">Code</label>
+                <input type="text" id="code" name="code[]" class="short-input" required>
+                <label for="subject-description">Subject Description</label>
+                <input type="text" id="subject-description" name="subject-description[]" required>
+                <label for="day">Day</label>
+                <input type="text" id="day" name="day[]" class="short-input" required>
+                <label for="time">Time</label>
+                <input type="text" id="time" name="time[]" class="short-input" required>
+                <label for="no-of-units">No. of Units</label>
+                <input type="number" id="no-of-units" name="no-of-units[]" class="short-input" required>
+            </div>
+            
+            <div class="row">
+                <label for="reason">Reason for Cross-Enrollment</label>
+                <input type="text" id="reason" name="reason" required>
+            </div>
+            
+            <div class="row">
+                <label for="signature">Signature</label>
+                <input type="text" id="signature" name="signature" required>
+            </div>
+            
+            <div class="row button-row">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </div>
+</body>
+</html>
