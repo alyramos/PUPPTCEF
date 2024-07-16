@@ -22,16 +22,6 @@ app.get("/", (req, res) => {
 	}
 });
 
-app.get("/about", (req, res) => {
-	try {
-		res.render("about");
-	} catch
-	(err) {
-		res.render("errorpage");
-		console.log(err);
-	}
-});
-
 app.get("/form", (req, res) => {
 	try {
 		res.render("form");
