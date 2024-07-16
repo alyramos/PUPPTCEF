@@ -46,43 +46,77 @@ ul li a {
 	text-decoration: none;
 }
 
-.container {
-	background-color: rgba(255, 255, 255, 0.9);
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 450px; 
+}
+
+.img1 {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 30px;
+	color: #800000;
+	margin: 0;
+	font-weight: bolder;
+}
+
+h2 {
+	font-size: 20px;
+	color: black;
+	margin: 0;
+}
+
+ div {
+	display:inline-block;
+	align-items: center;
+	width: 40%;
+}
+
+.container-one {
+	background-color: #ffffff;
 	width: 80%;
 	max-width: 1000px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 	overflow: hidden;
 	padding: 20px;
-	margin-top: 70px;
+	margin-top: 500px;
 }
 
-header {
-	background-color: #A51C30;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
+.container-two {
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	max-width: 1000px;
+	width: 80%;
 }
 
-header img {
-	max-width: 100px;
-	display: block;
-	margin: 0 auto 10px;
+.container-three {
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	max-width: 1000px;
+	width: 80%;
 }
 
-header h1 {
-	margin: 0;
-	font-size: 2em;
-}
-
-header h2 {
-	margin: 10px 0 0;
-	font-size: 1.2em;
+.container-four {
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	max-width: 1000px;
+	width: 80%;
 }
 
 .instructions {
 	padding: 20px;
-	background-color: #f0f0f0;
 	border-bottom: 1px solid #ddd;
 }
 
@@ -95,6 +129,10 @@ header h2 {
 	padding-left: 20px;
 }
 
+.container-two {
+	background-color: #ffffff;
+	overflow: hidden;
+}
 form {
 	padding: 20px;
 }
@@ -122,12 +160,10 @@ form {
 	min-width: 100px;
 }
 
-.row input[type="date"] {
-	padding: 6px;
-}
 
 .short-input {
 	flex: 0 0 100px;
+	vertical-align: middle;
 }
 
 .very-short-input {

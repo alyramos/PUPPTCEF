@@ -17,21 +17,23 @@
             <li><a href="/about">ABOUT</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <header>
-            <img src="/images/pup_logo_one.png" alt="PUPPTCEF Logo">
-            <h1>PUPPTCEF</h1>
-            <h2>REQUEST OF PERMISSION TO CROSS-ENROLL FORM</h2>
-        </header>
-        <section class="instructions">
+    <div class="header">
+        <img src="/images/pup_logo_one.png" class="img1" alt="PUPPTCEF Logo">
+        <h1>PUPPTCEF</h1>
+        <h2>REQUEST OF PERMISSION TO CROSS-ENROLL FORM</h2>
+    </div>
+    <form>
+    <div class="container-one">
+        <div class="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>Fill in your personal details, including your full name, student number, gender, and the current program you are enrolled in.</li>
                 <li>Provide the details of the subject you wish to cross-enroll in such as the subject description and subject code.</li>
                 <li>Ensure you get the necessary approvals by obtaining signatures from relevant authorities.</li>
             </ol>
-        </section>
-        <form>
+        </div>
+    </div>
+    <div class="container-two">
             <div class="row">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="First Name, Middle Initial, Last Name" required>
@@ -56,8 +58,6 @@
                 </div>
                 <label for="school-year">School Year</label>
                 <input type="text" id="school-year" name="school-year" class="short-input" required>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" class="short-input" required>
             </div>
             
             <div class="row">
@@ -68,7 +68,9 @@
                 <label for="dean">Dean</label>
                 <input type="text" id="dean" name="dean" placeholder="First Name, Middle Initial, Last Name" required>
             </div>
-            
+
+        </div>
+        <div class="container-three">
             <div class="row">
                 <label for="code">Code</label>
                 <input type="text" id="code" name="code[]" class="short-input" required>
@@ -81,12 +83,12 @@
                 <label for="no-of-units">No. of Units</label>
                 <input type="number" id="no-of-units" name="no-of-units[]" class="short-input" required>
             </div>
-            
+        </div>
+        <div class="container-four">
             <div class="row">
                 <label for="reason">Reason for Cross-Enrollment</label>
                 <input type="text" id="reason" name="reason" required>
             </div>
-            
             <div class="row">
                 <label for="signature">Signature</label>
                 <input type="text" id="signature" name="signature" required>
@@ -95,6 +97,7 @@
             <div class="row button-row">
                 <button type="submit">Submit</button>
             </div>
+        </div>
         </form>
     </div>
 </body>
