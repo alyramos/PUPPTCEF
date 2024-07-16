@@ -57,6 +57,7 @@ async function initializeDatabase() {
 			program_cp VARCHAR(255),
 			program_cp_title VARCHAR(255),
 			program_dean VARCHAR(255),
+			program_sy VARCHAR(255)
 			FOREIGN KEY (student_id) REFERENCES students(student_id)
 		`, (err, res) => {
 		if(err) {

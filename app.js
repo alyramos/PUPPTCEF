@@ -1,7 +1,7 @@
 // SETUP
 import * as dotenv from "dotenv";
 import express from "express";
-import pool, { initializeDatabase } from "./db.mjs";
+import pool from "./db.mjs";
 
 dotenv.config();
 
@@ -57,6 +57,7 @@ app.post("/api/form", async (req, res) => {
 			program_cp_title,
 			program_dean,
 			subject_code,
+			program_sy,
 			subject_description,
 			subject_day,
 			subject_time,
@@ -84,9 +85,10 @@ app.post("/api/form", async (req, res) => {
 				student_id,
 				program_cp,
 				program_cp_title,
-				program_dean
-			) VALUES ($1, $2, $3, $4)
-		`, [student.rows[0].student_id, program_cp, program_cp_title, program_dean]);
+				program_dean,
+				program_sy
+			) VALUES ($1, $2, $3, $4, $5)
+		`, [student.rows[0].student_id, program_cp, program_cp_title, program_dean, program_sy]);
 
 		const subject = await client.query(`
 			INSERT INTO subjects (
