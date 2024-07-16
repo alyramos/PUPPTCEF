@@ -17,35 +17,36 @@
             <li><a href="/about">ABOUT</a></li>
         </ul>
     </nav>
+
+    <!--HEADER-->
     <div class="header">
         <img src="/images/pup_logo_one.png" class="img1" alt="PUPPTCEF Logo">
         <h1>PUPPTCEF</h1>
         <h2>REQUEST OF PERMISSION TO CROSS-ENROLL FORM</h2>
     </div>
     <form>
+
+    <!--CONTAINER 1-->
     <div class="container-one">
         <div class="instructions">
             <h3>Instructions:</h3>
             <ol>
-                <li>Fill in your personal details, including your full name, student number, gender, and the current program you are enrolled in.</li>
+                <li>Fill in your personal details, including your full name, student number, and the current program you are enrolled in.</li>
                 <li>Provide the details of the subject you wish to cross-enroll in such as the subject description and subject code.</li>
                 <li>Ensure you get the necessary approvals by obtaining signatures from relevant authorities.</li>
             </ol>
         </div>
     </div>
+
+    <!--CONTAINER 2-->
     <div class="container-two">
             <div class="row">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="First Name, Middle Initial, Last Name" required>
                 <label for="student-number">Student Number</label>
                 <input type="text" id="student-number" name="student-number" required>
-                <label for="gender">Gender</label>
-                <select id="gender" name="gender" class="very-short-input" required>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
             </div>
-            
+
             <div class="row">
                 <label for="program">Program</label>
                 <input type="text" id="program" name="program" required>
@@ -68,8 +69,9 @@
                 <label for="dean">Dean</label>
                 <input type="text" id="dean" name="dean" placeholder="First Name, Middle Initial, Last Name" required>
             </div>
-
         </div>
+
+        <!--CONTAINER 3-->
         <div class="container-three">
             <div class="row">
                 <label for="code">Code</label>
@@ -84,6 +86,8 @@
                 <input type="number" id="no-of-units" name="no-of-units[]" class="short-input" required>
             </div>
         </div>
+
+        <!--CONTAINER 4-->
         <div class="container-four">
             <div class="row">
                 <label for="reason">Reason for Cross-Enrollment</label>
@@ -92,8 +96,7 @@
             <div class="row">
                 <label for="signature">Signature</label>
                 <input type="text" id="signature" name="signature" required>
-            </div>
-            
+            </div>    
             <div class="row button-row">
                 <button type="submit">Submit</button>
             </div>
