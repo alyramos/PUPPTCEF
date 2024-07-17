@@ -118,3 +118,5 @@ async function initializeDatabase() {
 		}
 	});
 }
+
+initializeDatabase();
