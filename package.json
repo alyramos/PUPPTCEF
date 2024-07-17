@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon app.js",
     "prod-start": "npm run setupdb && NODE_ENV=production node ./app.js",
-	  "setupdb": "node ./setupdb.js"
+	  "setupdb": "node ./db.mjs"
   },
   "keywords": [
     "Website",
