@@ -39,7 +39,6 @@ app.post("/api/form", async (req, res) => {
 		const {
 			student_name,
 			student_number,
-			student_gender,
 			student_program,
 			target_semester,
 			signature,
@@ -63,12 +62,11 @@ app.post("/api/form", async (req, res) => {
 			INSERT INTO students (
 				student_name,
 				student_number,
-				student_gender,
 				student_program,
 				target_semester,
 				signature
-			) VALUES ($1, $2, $3, $4, $5, $6)
-		`, [student_name, student_number, student_gender, student_program, target_semester, signature]);
+			) VALUES ($1, $2, $3, $4, $5) RETURNING student_id
+		`, [student_name, student_number, student_program, target_semester, signature]);
 
 		const program = await client.query(`
 			INSERT INTO programs (
@@ -107,10 +105,13 @@ app.post("/api/form", async (req, res) => {
 			) VALUES ($1, $2, $3, $4)
 		`, [student.rows[0].student_id, current_units, cross_enroll_units, total_units]);
 
-		alert("Submit Successful!");
+		client.release();
+
+		// res.status(200).json({ message: "Submit Successful!" });
 		res.redirect("/");
 	} catch (error) {
 		console.error(error);
+		res.status(500).json({ error: "Internal Server Error" });
 	}
 })
 
