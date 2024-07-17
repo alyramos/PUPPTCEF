@@ -89,7 +89,7 @@ app.post("/api/form", async (req, res) => {
 				subject_time,
 				subject_units
 			) VALUES ($1, $2, $3, $4, $5, $6)
-		`, [student.rows[0].student_id, subject_code, subject_description, subject_day, subject_time, subject_units]);
+		`, [student.rows[0].student_id, subject_code[0], subject_description[0], subject_day[0], subject_time[0], subject_units[0]]);
 
 		const reasons = await client.query(`
 			INSERT INTO reasons (
@@ -107,6 +107,8 @@ app.post("/api/form", async (req, res) => {
 			) VALUES ($1, $2, $3, $4)
 		`, [student.rows[0].student_id, current_units, cross_enroll_units, total_units]);
 
+		alert("Submit Successful!");
+		res.redirect("/");
 	} catch (error) {
 		console.error(error);
 	}

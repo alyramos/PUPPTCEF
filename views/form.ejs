@@ -36,115 +36,115 @@
             </div>
         </div>
     </div>
-    <form method="POST">
+    <form method="POST" action="/api/form">
         <div class="formgroup">
             <div style="width:50%">
                 <label for="student_name">Name</label>
-                <input type="text" name="student_name" id="student_name">
+                <input required type="text" name="student_name" id="student_name">
             </div>
             <div style="width:45%">
                 <label for="student_number">Student Number</label>
-                <input type="text" name="student_number" id="student_number">
+                <input required type="text" name="student_number" id="student_number">
             </div>
             <div style="width: 65%">
                 <label for="student_program">Program</label>
-                <input type="text" name="student_program" id="student_program">
+                <input required type="text" name="student_program" id="student_program">
             </div>
             <div class="radiogroup" style="width: 10%">
                 <label for="target_semester">Semester</label>
                 <div>
                     <div style="width: 50%;">
-                        <input type="radio" name="target_semester" id="first_semester" value="1">
+                        <input required type="radio" name="target_semester" id="first_semester" value="1">
                         <label for="first_semester">1st</label>
                     </div>
                     <div style="width: 50%;">
-                        <input type="radio" name="target_semester" id="second_semester" value="2">
+                        <input required type="radio" name="target_semester" id="second_semester" value="2">
                         <label for="second_semester">2nd</label>
                     </div>
                 </div>
             </div>
             <div style="width: 25%">
                 <label for="program_sy">School Year</label>
-                <input type="text" name="program_sy" id="program_sy">
+                <input required type="text" name="program_sy" id="program_sy">
             </div>
             <div style="width: 30%">
                 <label for="program_cp">Program Chairperson</label>
-                <input type="text" name="program_cp" id="program_cp">
+                <input required type="text" name="program_cp" id="program_cp">
             </div>
             <div style="width: 30%">
                 <label for="program_cp_title">Title</label>
-                <input type="text" name="program_cp_title" id="program_cp_title">
+                <input required type="text" name="program_cp_title" id="program_cp_title">
             </div>
             <div style="width: 30%">
                 <label for="program_dean">Dean</label>
-                <input type="text" name="program_dean" id="program_dean">
+                <input required type="text" name="program_dean" id="program_dean">
             </div>
         </div>
         <div class="formgroup">
             <div>
                 <div>
                     <label for="subject_code">Code</label>
-                    <input type="text" name="subject_code" id="subject_code">
+                    <input required type="text" name="subject_code" id="subject_code">
                 </div>
                 <div>
                     <label for="subject_description">Description</label>
-                    <input type="text" name="subject_description" id="subject_description">
+                    <input required type="text" name="subject_description" id="subject_description">
                 </div>
                 <div>
                     <label for="subject_day">Day</label>
-                    <input type="text" name="subject_day" id="subject_day">
+                    <input required type="text" name="subject_day" id="subject_day">
                 </div>
                 <div>
                     <label for="subject_time">Time</label>
-                    <input type="text" name="subject_time" id="subject_time">
+                    <input required type="text" name="subject_time" id="subject_time">
                 </div>
                 <div>
                     <label for="subject_units">No. of Units</label>
-                    <input type="number" name="subject_units" id="subject_units">
+                    <input required type="number" name="subject_units" id="subject_units">
                 </div>
             </div>
             <div>
                 <div>
                     <label for="subject_code">Code</label>
-                    <input type="text" name="subject_code" id="subject_code">
+                    <input required type="text" name="subject_code" id="subject_code">
                 </div>
                 <div>
                     <label for="subject_description">Description</label>
-                    <input type="text" name="subject_description" id="subject_description">
+                    <input required type="text" name="subject_description" id="subject_description">
                 </div>
                 <div>
                     <label for="subject_day">Day</label>
-                    <input type="text" name="subject_day" id="subject_day">
+                    <input required type="text" name="subject_day" id="subject_day">
                 </div>
                 <div>
                     <label for="subject_time">Time</label>
-                    <input type="text" name="subject_time" id="subject_time">
+                    <input required type="text" name="subject_time" id="subject_time">
                 </div>
                 <div>
                     <label for="subject_units">No. of Units</label>
-                    <input type="number" name="subject_units" id="subject_units">
+                    <input required type="number" name="subject_units" id="subject_units">
                 </div>
             </div>
             <div>
                 <div>
                     <label for="subject_code">Code</label>
-                    <input type="text" name="subject_code" id="subject_code">
+                    <input required type="text" name="subject_code" id="subject_code">
                 </div>
                 <div>
                     <label for="subject_description">Description</label>
-                    <input type="text" name="subject_description" id="subject_description">
+                    <input required type="text" name="subject_description" id="subject_description">
                 </div>
                 <div>
                     <label for="subject_day">Day</label>
-                    <input type="text" name="subject_day" id="subject_day">
+                    <input required type="text" name="subject_day" id="subject_day">
                 </div>
                 <div>
                     <label for="subject_time">Time</label>
-                    <input type="text" name="subject_time" id="subject_time">
+                    <input required type="text" name="subject_time" id="subject_time">
                 </div>
                 <div>
                     <label for="subject_units">No. of Units</label>
-                    <input type="number" name="subject_units" id="subject_units">
+                    <input required type="number" name="subject_units" id="subject_units">
                 </div>
             </div>
         </div>
@@ -156,21 +156,21 @@
             <div>
                 <div>
                     <label for="current_units">No. of Units Currently Enrolled in PUP</label>
-                    <input type="number" name="current_units" id="current_units">
+                    <input required type="number" name="current_units" id="current_units">
                 </div>
                 <div>
                     <label for="cross_enroll_units">No. of Units to be Cross-Enrolled</label>
-                    <input type="number" name="cross_enroll_units" id="cross_enroll_units">
+                    <input required type="number" name="cross_enroll_units" id="cross_enroll_units">
                 </div>
                 <div>
                     <label for="total_units">Total No. of Units Enrolled</label>
-                    <input type="number" name="total_units" id="total_units">
+                    <input required type="number" name="total_units" id="total_units">
                 </div>
             </div>
         </div>
         <div class="formgroup">
             <div>
-                <input type="file" name="signature" id="signature">
+                <input required type="file" name="signature" id="signature">
                 <label for="signature">Student's Signature over Printed Name</label>
             </div>
             <div>
@@ -185,66 +185,66 @@
         <!--<div class="container-two">
                 <div class="row">
                     <label for="name">Name</label>
-                    <input type="text" id="student_name" name="student_name" placeholder="First Name, Middle Initial, Last Name" required>
+                    <input required type="text" id="student_name" name="student_name" placeholder="First Name, Middle Initial, Last Name" required>
                     <label for="student_number">Student Number</label>
-                    <input type="text" id="student_number" name="student_number" required>
+                    <input required type="text" id="student_number" name="student_number" required>
                 </div>
 
                 <div class="row">
                     <label for="student_program">Program</label>
-                    <input type="text" id="student_program" name="student_program" required>
+                    <input required type="text" id="student_program" name="student_program" required>
                     <label for="target_semester">Semester</label>
-                    <div class="short-input">
-                        <input type="radio" id="1st-sem" name="target_semester" value="1" required>
+                    <div class="short-input required">
+                        <input required type="radio" id="1st-sem" name="target_semester" value="1" required>
                         <label for="1st-sem">1st</label>
-                        <input type="radio" id="2nd-sem" name="target_semester" value="2">
+                        <input required type="radio" id="2nd-sem" name="target_semester" value="2">
                         <label for="2nd-sem">2nd</label>
                     </div>
                     <label for="school-year">School Year</label>
-                    <input type="text" id="school-year" name="school-year" class="short-input" required>
+                    <input required type="text" id="school-year" name="school-year" class="short-input required" required>
                 </div>
                 
                 <div class="row">
                     <label for="program_cp">Program Chairperson</label>
-                    <input type="text" id="program_cp" name="program_cp" placeholder="First Name, Middle Initial, Last Name" required>
+                    <input required type="text" id="program_cp" name="program_cp" placeholder="First Name, Middle Initial, Last Name" required>
                     <label for="program_cp_title">Title</label>
-                    <input type="text" id="program_cp_title" name="program_cp_title" required>
+                    <input required type="text" id="program_cp_title" name="program_cp_title" required>
                     <label for="program_dean">Dean</label>
-                    <input type="text" id="program_dean" name="program_dean" placeholder="First Name, Middle Initial, Last Name" required>
+                    <input required type="text" id="program_dean" name="program_dean" placeholder="First Name, Middle Initial, Last Name" required>
                 </div>
             </div>
 
             <div class="container-three">
                 <div class="row">
                     <label for="subject_code">Code</label>
-                    <input type="text" id="subject_code" name="subject_code[]" class="short-input" required>
+                    <input required type="text" id="subject_code" name="subject_code[]" class="short-input required" required>
                     <label for="subject_description">Subject Description</label>
-                    <input type="text" id="subject_description" name="subject_description[]" required>
+                    <input required type="text" id="subject_description" name="subject_description[]" required>
                     <label for="subject_day">Day</label>
-                    <input type="text" id="subject_day" name="subject_day[]" class="short-input" required>
+                    <input required type="text" id="subject_day" name="subject_day[]" class="short-input required" required>
                     <label for="subject_time">Time</label>
-                    <input type="text" id="subject_time" name="subject_time[]" class="short-input" required>
+                    <input required type="text" id="subject_time" name="subject_time[]" class="short-input required" required>
                     <label for="subject_units">No. of Units</label>
-                    <input type="number" id="subject_units" name="subject_units[]" class="short-input" required>
+                    <input required type="number" id="subject_units" name="subject_units[]" class="short-input required" required>
                 </div>
             </div>
 
             <div class="container-four">
                 <div class="row">
                     <label for="reason">Reason for Cross-Enrollment</label>
-                    <input type="text" id="reason" name="reason" required>
+                    <input required type="text" id="reason" name="reason" required>
                 </div>
                 <div class="row">
                     <label for="current_units">NO. OF UNITS CURRENTLY ENROLLED IN PUP:</label>
-                    <input type="text" id="current_units" name="current_units" required>
+                    <input required type="text" id="current_units" name="current_units" required>
                     <label for="cross">NO. OF UNITS TO BE CROSS-ENROLLED:</label>
-                    <input type="text" id="cross" name="cross" required>
+                    <input required type="text" id="cross" name="cross" required>
                     <label for="reason">TOTAL NO. OF UNITS ENROLLED:</label>
-                    <input type="text" id="reason" name="reason" required>
+                    <input required type="text" id="reason" name="reason" required>
                 </div>
                 <div class="row">
                     <label for="signature">Signature</label>
-                    <input type="file" id="signature" name="signature" required>
+                    <input required type="file" id="signature" name="signature" required>
                 </div> 
                 <div class="row button-row">
                     <button type="submit">Submit</button>
