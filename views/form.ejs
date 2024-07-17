@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUPPTCEF</title>
+    <link rel="stylesheet" href="stylesheets/form.css">
+    <link rel="icon" href="/images/pup_logo_one.png" type="image/pup icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="images/nav_logo.png" class="Image1" alt="website logo"></a>
+        <ul>
+            <li><a href="https://www.pup.edu.ph/">PUP</a></li>
+            <li><a href="https://www.pup.edu.ph/gs/forms">FORM</a></li>
+        </ul>
+    </nav>
+
+    <!--HEADER-->
+    <div class="header">
+        <img src="/images/pup_logo_one.png" class="img1" alt="PUPPTCEF Logo">
+        <h1>PUPPTCEF</h1>
+        <h2>REQUEST OF PERMISSION TO CROSS-ENROLL FORM</h2>
+    </div>
+    <div class="container-div">
+        <!--CONTAINER 1-->
+        <div class="container-one">
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Fill in your personal details, including your full name, student number, and the current program you are enrolled in.</li>
+                    <li>Provide the details of the subject you wish to cross-enroll in such as the subject description and subject code.</li>
+                    <li>Ensure you get the necessary approvals by obtaining signatures from relevant authorities.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <form method="POST" action="/api/form">
+        <div class="formgroup">
+            <div style="width:50%">
+                <label for="student_name">Name</label>
+                <input required type="text" name="student_name" id="student_name">
+            </div>
+            <div style="width:45%">
+                <label for="student_number">Student Number</label>
+                <input required type="text" name="student_number" id="student_number">
+            </div>
+            <div style="width: 65%">
+                <label for="student_program">Program</label>
+                <input required type="text" name="student_program" id="student_program">
+            </div>
+            <div class="radiogroup" style="width: 10%">
+                <label for="target_semester">Semester</label>
+                <div>
+                    <div style="width: 50%;">
+                        <input required type="radio" name="target_semester" id="first_semester" value="1">
+                        <label for="first_semester">1st</label>
+                    </div>
+                    <div style="width: 50%;">
+                        <input required type="radio" name="target_semester" id="second_semester" value="2">
+                        <label for="second_semester">2nd</label>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 25%">
+                <label for="program_sy">School Year</label>
+                <input required type="text" name="program_sy" id="program_sy">
+            </div>
+            <div style="width: 30%">
+                <label for="program_cp">Program Chairperson</label>
+                <input required type="text" name="program_cp" id="program_cp">
+            </div>
+            <div style="width: 30%">
+                <label for="program_cp_title">Title</label>
+                <input required type="text" name="program_cp_title" id="program_cp_title">
+            </div>
+            <div style="width: 30%">
+                <label for="program_dean">Dean</label>
+                <input required type="text" name="program_dean" id="program_dean">
+            </div>
+        </div>
+        <div class="formgroup">
+            <div>
+                <div>
+                    <label for="subject_code">Code</label>
+                    <input required type="text" name="subject_code" id="subject_code">
+                </div>
+                <div>
+                    <label for="subject_description">Description</label>
+                    <input required type="text" name="subject_description" id="subject_description">
+                </div>
+                <div>
+                    <label for="subject_day">Day</label>
+                    <input required type="text" name="subject_day" id="subject_day">
+                </div>
+                <div>
+                    <label for="subject_time">Time</label>
+                    <input required type="text" name="subject_time" id="subject_time">
+                </div>
+                <div>
+                    <label for="subject_units">No. of Units</label>
+                    <input required type="number" name="subject_units" id="subject_units">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="subject_code">Code</label>
+                    <input required type="text" name="subject_code" id="subject_code">
+                </div>
+                <div>
+                    <label for="subject_description">Description</label>
+                    <input required type="text" name="subject_description" id="subject_description">
+                </div>
+                <div>
+                    <label for="subject_day">Day</label>
+                    <input required type="text" name="subject_day" id="subject_day">
+                </div>
+                <div>
+                    <label for="subject_time">Time</label>
+                    <input required type="text" name="subject_time" id="subject_time">
+                </div>
+                <div>
+                    <label for="subject_units">No. of Units</label>
+                    <input required type="number" name="subject_units" id="subject_units">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="subject_code">Code</label>
+                    <input required type="text" name="subject_code" id="subject_code">
+                </div>
+                <div>
+                    <label for="subject_description">Description</label>
+                    <input required type="text" name="subject_description" id="subject_description">
+                </div>
+                <div>
+                    <label for="subject_day">Day</label>
+                    <input required type="text" name="subject_day" id="subject_day">
+                </div>
+                <div>
+                    <label for="subject_time">Time</label>
+                    <input required type="text" name="subject_time" id="subject_time">
+                </div>
+                <div>
+                    <label for="subject_units">No. of Units</label>
+                    <input required type="number" name="subject_units" id="subject_units">
+                </div>
+            </div>
+        </div>
+        <div class="formgroup">
+            <div>
+                <label for="reason">Reason for Cross-Enrollment</label>
+                <textarea name="reason" id="reason"></textarea>
+            </div>
+            <div>
+                <div>
+                    <label for="current_units">No. of Units Currently Enrolled in PUP</label>
+                    <input required type="number" name="current_units" id="current_units">
+                </div>
+                <div>
+                    <label for="cross_enroll_units">No. of Units to be Cross-Enrolled</label>
+                    <input required type="number" name="cross_enroll_units" id="cross_enroll_units">
+                </div>
+                <div>
+                    <label for="total_units">Total No. of Units Enrolled</label>
+                    <input required type="number" name="total_units" id="total_units">
+                </div>
+            </div>
+        </div>
+        <div class="formgroup">
+            <div>
+                <input required type="file" name="signature" id="signature">
+                <label for="signature">Student's Signature over Printed Name</label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
+        <!--<div class="container-two">
+                <div class="row">
+                    <label for="name">Name</label>
+                    <input required type="text" id="student_name" name="student_name" placeholder="First Name, Middle Initial, Last Name" required>
+                    <label for="student_number">Student Number</label>
+                    <input required type="text" id="student_number" name="student_number" required>
+                </div>
+
+                <div class="row">
+                    <label for="student_program">Program</label>
+                    <input required type="text" id="student_program" name="student_program" required>
+                    <label for="target_semester">Semester</label>
+                    <div class="short-input required">
+                        <input required type="radio" id="1st-sem" name="target_semester" value="1" required>
+                        <label for="1st-sem">1st</label>
+                        <input required type="radio" id="2nd-sem" name="target_semester" value="2">
+                        <label for="2nd-sem">2nd</label>
+                    </div>
+                    <label for="school-year">School Year</label>
+                    <input required type="text" id="school-year" name="school-year" class="short-input required" required>
+                </div>
+                
+                <div class="row">
+                    <label for="program_cp">Program Chairperson</label>
+                    <input required type="text" id="program_cp" name="program_cp" placeholder="First Name, Middle Initial, Last Name" required>
+                    <label for="program_cp_title">Title</label>
+                    <input required type="text" id="program_cp_title" name="program_cp_title" required>
+                    <label for="program_dean">Dean</label>
+                    <input required type="text" id="program_dean" name="program_dean" placeholder="First Name, Middle Initial, Last Name" required>
+                </div>
+            </div>
+
+            <div class="container-three">
+                <div class="row">
+                    <label for="subject_code">Code</label>
+                    <input required type="text" id="subject_code" name="subject_code[]" class="short-input required" required>
+                    <label for="subject_description">Subject Description</label>
+                    <input required type="text" id="subject_description" name="subject_description[]" required>
+                    <label for="subject_day">Day</label>
+                    <input required type="text" id="subject_day" name="subject_day[]" class="short-input required" required>
+                    <label for="subject_time">Time</label>
+                    <input required type="text" id="subject_time" name="subject_time[]" class="short-input required" required>
+                    <label for="subject_units">No. of Units</label>
+                    <input required type="number" id="subject_units" name="subject_units[]" class="short-input required" required>
+                </div>
+            </div>
+
+            <div class="container-four">
+                <div class="row">
+                    <label for="reason">Reason for Cross-Enrollment</label>
+                    <input required type="text" id="reason" name="reason" required>
+                </div>
+                <div class="row">
+                    <label for="current_units">NO. OF UNITS CURRENTLY ENROLLED IN PUP:</label>
+                    <input required type="text" id="current_units" name="current_units" required>
+                    <label for="cross">NO. OF UNITS TO BE CROSS-ENROLLED:</label>
+                    <input required type="text" id="cross" name="cross" required>
+                    <label for="reason">TOTAL NO. OF UNITS ENROLLED:</label>
+                    <input required type="text" id="reason" name="reason" required>
+                </div>
+                <div class="row">
+                    <label for="signature">Signature</label>
+                    <input required type="file" id="signature" name="signature" required>
+                </div> 
+                <div class="row button-row">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            </form>
+        </div>  -->
