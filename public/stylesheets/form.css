@@ -1,0 +1,217 @@
+body {
+	font-family: Arial, sans-serif;
+	background-image: url('/images/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	height: 130vh;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: #800201;
+	box-sizing: border-box;
+	filter: drop-shadow(0 0 0.75rem black);
+	padding: 10px 20px;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.Image1 {
+	width: 150px;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	margin-left: auto;
+	gap: 20px;
+	align-items: center;
+	text-decoration: none;
+}
+
+ul li a {
+	font-family: sans-serif;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.img1 {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 30px;
+	color: #800000;
+	margin: 0;
+	font-weight: bolder;
+}
+
+h2 {
+	font-size: 20px;
+	color: black;
+	margin: 0;
+}
+
+.container-div{
+	margin: auto;
+	justify-content: space-between;
+}
+.container-one {
+	background-color: #ffffff;
+	width: 65%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 20px;
+	margin: auto;
+}
+
+.instructions {
+	padding: 20px;
+}
+
+.instructions h3 {
+	margin: 0;
+}
+
+.instructions ol {
+	margin: 10px 0 0;
+	padding-left: 20px;
+}
+
+button[type="submit"] {
+	background-color: #A51C30;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+	background-color: #900;
+}
+
+.formgroup {
+	background-color: #ffffff;
+	width: 65%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 20px;
+	margin: 1rem auto;
+}
+
+.formgroup label {
+	font-family: 'Inter';
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.formgroup > div {
+	margin: 0.5rem 0;
+}
+
+.formgroup:nth-child(1) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.formgroup:nth-child(1) > div {
+	display: flex;
+	flex-direction: column;
+	/* width: 45%; */
+}
+
+.formgroup:nth-child(1) .radiogroup {
+	display: flex;
+	flex-direction: column;
+}
+
+.formgroup:nth-child(1) .radiogroup > div {
+	display: flex;
+	flex-direction: row;
+}
+
+.formgroup:nth-child(1) .radiogroup > div > div{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.formgroup:nth-child(2) > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formgroup:nth-child(2) > div > div {
+	margin: 0.5rem 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.formgroup:nth-child(3) {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formgroup:nth-child(3) > div:first-child {
+	display: flex;
+	flex-direction: column;
+}
+
+.formgroup:nth-child(3) > div > textarea {
+	height: 100%;
+	width: 100%;
+}
+
+.formgroup:nth-child(4) {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formgroup:nth-child(4) > div:first-child {
+	display: flex;
+	flex-direction: column;
+}
+
+.formgroup:nth-child(3) > div:last-child > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="number"],
+textarea
+ {
+	background-color: #D9D9D9;
+	border-radius: 1rem;
+	border: none;
+	padding: 0.5rem;
+}
